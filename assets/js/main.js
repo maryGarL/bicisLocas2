@@ -17,15 +17,15 @@ var emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
        }
     	 if(characterAllowed.test(nombre.value)== false){
     		//alert("Solo vamos a aceptar letras!");
-        mostrar("nombre","Solo vamos a aceptar letras!");
+        mostrar("nombre1","Solo vamos a aceptar letras!");
       }else {
-        ocultar("nombre")
+        ocultar("nombre1")
       }
     	 if(nombre.value.charAt(0) != nombre.value.charAt(0).toUpperCase()){
     		//alert("Tu Nombre Debe comenzar con Mayúscula");
-        mostrar("nombre","Tu Nombre Debe comenzar con Mayúscula");
+        mostrar("nombre2","Tu Nombre Debe comenzar con Mayúscula");
       }else {
-        ocultar("nombre")
+        ocultar("nombre2")
       }
     	if(apellido.value.length == 0 ){
     		//alert("Ingresa tu apellido")
@@ -35,15 +35,15 @@ var emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
       }
     	if(characterAllowed.test(apellido.value)== false){
     		//alert("Solo vamos a aceptar letras!");
-        mostrar("apellido","Solo vamos a aceptar letras!");
+        mostrar("apellido1","Solo vamos a aceptar letras!");
       }else {
-        ocultar("apellido")
+        ocultar("apellido1")
       }
     	if(apellido.value.charAt(0) != apellido.value.charAt(0).toUpperCase()){
     		//alert("Tu apellido Debe comenzar con Mayúscula");
-        mostrar("apellido","Tu apellido Debe comenzar con Mayúscula");
+        mostrar("apellido2","Tu apellido Debe comenzar con Mayúscula");
       }else {
-        ocultar("apellido")
+        ocultar("apellido2")
       }
 
     	if((email.value=="")||(emailRegex.test(email.value)==false)){
